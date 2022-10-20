@@ -1,0 +1,20 @@
+
+<app-card 
+banner="https://images.unsplash.com/photo-1665989215795-f67f4723087d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60"
+titulo="Almocing"
+username="Jair Messias"
+userFoto="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/2022-09-07_Desfile_C%C3%ADvico-Militar_por_ocasi%C3%A3o_das_Comemora%C3%A7%C3%B5es_do_Bicenten%C3%A1rio_da_Independ%C3%AAncia_do_Brasil_-_52341366768_%28cropped%29.jpg/220px-2022-09-07_Desfile_C%C3%ADvico-Militar_por_ocasi%C3%A3o_das_Comemora%C3%A7%C3%B5es_do_Bicenten%C3%A1rio_da_Independ%C3%AAncia_do_Brasil_-_52341366768_%28cropped%29.jpg"
+corBtn="green"
+></app-card>
+<app-card 
+banner="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+titulo="Janting"
+username="Luiz Inacio"
+userFoto="https://static.poder360.com.br/2022/10/lula-debate-ironico-620x930.jpg"
+corBtn="red"
+></app-card>
+<!-- ao clicar no botão, desejo executar o metroco click() do unput file -->
+<!-- variaveis de template - template avriables -->
+<app-uploader (uploadCompleto)="mostrarMsg()"></app-uploader>
+<input type="file" #inputFile>
+<button id="btn" (click)="inputFile.click()">Selecionar um arquivo</button>
