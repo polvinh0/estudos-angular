@@ -1,0 +1,39 @@
+
+<div class="a">
+    <div class="azul">
+        <div class="frente">
+            <div>LOGO</div>
+            <div>
+                <div>{{numeroCartao}}</div>
+                <div class="footerCartao">
+                    <div>{{nomeCartao}}</div>
+                    <div>{{mesCartao}}/{{anoCartao}}</div>
+                </div>
+            </div>    
+        </div>
+        <div class="verso">
+            <input type="text" class="tarja">
+            <input type="text" class="cversoc" value={{cvcCartao}}>
+        </div>
+    </div>
+    <div class="branco">
+        <div class="container">
+
+        <p>Nome do Cartão</p>
+        <input type="text" class="nomeCartao"
+        (keyup)="nome($event)">
+        <p>Número do Cartão</p>
+        <input type="text" class="numeroCartao"(keyup)="numero($event)">
+        <div class="textoCartao">
+        <p>Expiração</p>
+        <p>CVC</p>
+        </div>
+        <div class="dadosCartao">
+        <input type="text" name="MM" class="MM" id="MM" placeholder="MM" (keyup)="mes($event)">
+        <input type="text" name="AA" class="MM" id="AA" placeholder="AA" (keyup)="ano($event)">
+        <input type="text" name= "CVC"class="CVC" id="CVC" placeholder="" (keyup)="cvc($event)">
+        <button class="btn">Confirmar</button>
+        </div>
+        </div>    
+
+    </div>

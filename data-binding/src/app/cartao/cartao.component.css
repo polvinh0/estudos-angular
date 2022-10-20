@@ -1,0 +1,115 @@
+/* You can add global styles to this file, and also import other style files */
+.a{
+    display: flex;
+}
+
+.azul{
+    background: linear-gradient( 337deg, rgba(2,0,36,1) 0%, rgba(9,118,121,1) 100%, rgba(0,212,255,1));
+    height: 100vh;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    gap: 15px;
+}
+.branco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    width: 65%;
+}
+.branco p{
+    font-weight: 600;
+}
+
+.frente {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: orange;
+    width: 300px;
+    height: 150px;
+    border-radius: 6px;
+}
+.footerCartao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.verso {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(229, 226, 226);
+    width: 300px;
+    height: 150px;
+    border-radius: 6px;
+}
+
+.tarja {
+    margin-top: 20px;
+    border: none;
+    background-color: black;
+    width: 100%;
+    height: 40px;
+}
+
+.cversoc {
+    text-align: end;
+    width: 200px;
+    background-color: rgb(182, 180, 180);
+    margin: 4px 20px 0px 20px;
+}
+
+.container {
+    background-color: white;
+    height: 260px;
+    width: 400px;
+}
+
+.container p{
+    margin: 5px;
+}
+input[type="text"]{
+    border: 1px solid rgb(156, 153, 153);
+    border-radius: 4px;
+    width: 100%;
+}
+input[class="MM"] {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+
+}
+input[class="CVC"] {
+    width: 65%;
+    height: 50px;
+    margin: 2px 2px 2px 0;
+}    
+
+input[class="cversoc"] {
+    width: 260px;
+   
+
+}
+.dadosCartao {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.textoCartao{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aliceblue; */
+    width: 50%;
+    
+}
+.btn {
+    width: 100%;
+    background: linear-gradient( 337deg, rgba(2,0,36,1) 0%, rgba(9,118,121,1) 100%, rgba(0,212,255,1));
+    color: white;
+    
+}
