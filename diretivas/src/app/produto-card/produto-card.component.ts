@@ -15,6 +15,9 @@ export class ProdutoCardComponent implements OnInit {
     nome:'',
     preco: 0
   }
+
+  mostrarProduto: boolean = true
+
   constructor() { }
 
   ngOnInit(): void {
