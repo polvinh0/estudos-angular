@@ -5,7 +5,7 @@ serve para que a partir de uma determinada condição booleana
 um elemento HTML ou componente apareça na sua tela ou não -->
 
 
-<div class="card" *ngIf="mostrarProduto == true">
+<div class="card" *ngIf="mostrarProduto == true; else conteudoAlternativo">
     <img src="{{prod.imagem}}" alt="aa" class="card img-top">
     <div class="card-body">
         <h5 class="card-title">{{ prod.nome }}</h5>
@@ -20,7 +20,7 @@ um elemento HTML ou componente apareça na sua tela ou não -->
             azul -> bg-primary
             amarelo -> bg-warning
             vermelho -> bg-danger
-            verde -> bg-sucess
+            verde -> bg-success
 
             ngClass te permite adicionar ou remover classes
             de um elemento a partir de condições logicas (true/false)
@@ -35,6 +35,30 @@ um elemento HTML ou componente apareça na sua tela ou não -->
         }"
         >{{prod.estoque}} Unidades restantes!</span>
         <p class="card-text text-truncate">{{prod.descricao}}</p>
-        <button class="btn btn-sm btn-danger" (click)="mostrarProduto=false">Esconder Produto</button>
+        <button class="btn btn-sm btn-danger" (click)="esconderProduto()">
+            Esconder Produto
+        </button>
+        <button class="btn btn-sm" (click)="emitirEventoDeletar()">
+        &times;
+        </button>
     </div>
 </div>
+<!-- 
+    ng-template serve como um componente auxiliar
+    que nos permite criar a estrutura 'else' de algum *ngIf
+    
+    Por padrão, qualquer coisa que vc coloque dentro do
+    componente aparacerá na sua tela. para o conteúdo
+    aparecer, vc precisara criar um gatilho.
+
+ -->
+<!-- # vale como uma variável no typescript -->
+
+<ng-template #conteudoAlternativo>
+    <div class="card">
+        <div class="card-body">
+          <p class="card-text">O produto {{ prod.nome }} não aparecerá para os usuários desse site</p>
+          <button class="btn btn-danger" (click)="aparecerProduto()">Mostrar Novamente</button>
+        </div>
+      </div>
+</ng-template>
