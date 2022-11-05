@@ -1,0 +1,94 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.titulo{
+    font-size: 60px;
+}
+
+.form-cadastro{
+    border-radius: 15px;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.form-cadastro_titulo{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.form-cadastro_formulario{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+
+}
+
+.btn-adicionar{
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+input{
+    border-radius: 20px;
+    padding: 5px;
+    width: 28%;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.caixa-avaliacao{
+    display: flex;
+    width: auto;
+    height: 30px;
+    align-items: center;
+    color: #e3c5a3;
+    margin: 0 10px;
+}
+
+.avaliacao{
+    margin-right: 5px;
+}
+
+.icone-estrela{
+    cursor: pointer;
+}
+
+.btn-adicionar{
+    background-color: #e0bb54;
+    border: none;
+    transition: 0.5s;
+    border-radius: 15px;
+    width: 100px;
+    padding: 7px;
+}
+
+.btn-adicionar:hover{
+    transform: scale(1.1);
+}
+
+/* CARDS */
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin: 20px 80px;
+}

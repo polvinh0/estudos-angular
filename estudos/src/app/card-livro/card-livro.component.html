@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-capa">
+        <img [src]="livro.capa" class="img_capa">
+    </div>
+    <div class="card-conteudo">
+        <p class="card-conteudo_nota">{{ livro.nota }} <img src="../../assets/estrela.png" alt="" width="17px"></p>
+        <p class="card-conteudo_titulo"><strong>Título:{{ livro.titulo }}</strong></p>
+        <p class="card-conteudo_autor"><strong>Autor(a): {{ livro.autor }}</strong></p>
+        <p class="card-conteudo_paginas"><strong>Nº de páginas:{{ livro.paginas }}</strong></p>
+    </div>
+    <div class="card-lixeira">
+        <img src="../../assets/lixeira.png" class="lixinho" (click)="excluirLivro()">
+    </div>
+  </div>
+  <!-- <a href="https://www.flaticon.com/br/icones-gratis/lixo" title="lixo ícones">Lixo ícones criados por Catalin Fertu - Flaticon</a> -->
