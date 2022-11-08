@@ -7,6 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CartaoComponent implements OnInit {
 
+  @Input() name: string = "";
+
   nomeCartao: string = ''
   nome(event: KeyboardEvent) {
     this.nomeCartao = (<HTMLInputElement>event.target).value
