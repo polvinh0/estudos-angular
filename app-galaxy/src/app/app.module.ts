@@ -3,25 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './views/home/home.component';
+import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material/material.module';
-import { ListaFilmesComponent } from './Pages/lista-filmes/lista-filmes.component';
-import { FilmeComponent } from './Pages/filme/filme.component';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { MaterialModule } from './shared/material/material.module';
+import { ExoplanetsListComponent } from './views/exoplanets-list/exoplanets-list.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListaFilmesComponent,
-    FilmeComponent
+    HomeComponent,
+    HeaderComponent,
+    ExoplanetsListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule,
     HttpClientModule
   ],
   providers: [],

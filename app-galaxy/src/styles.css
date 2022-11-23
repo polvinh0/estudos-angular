@@ -1,0 +1,130 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(4, 10, 23);
+    background:linear-gradient(45deg, rgb(4,10,23) 3%, rgb(0,24,72) 30%, rgb(75,46,133) 67%);
+    padding-top: 64px;
+}
+ mat-toolbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 15px (rgb(13, 12, 30));
+ }
+
+ .container {
+    width: clamp(300px, 100%, 1200px);
+    /* height: 100%;
+    padding: 30px;
+    margin: 0 auto; */
+
+ }
+
+ img {
+    width: 300px;
+    filter: drop-shadow(0 0 50px rgb(107, 108, 112));
+ }
+
+ #planeta {
+    width: 300px;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    animation: space;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+ }
+ 
+ #cometa{
+    width: 200px;
+    position: fixed;
+    top: 100px;
+    right: 80px;
+    animation: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+ }
+
+ #astronauta {
+    width: 200px;
+    position: fixed;
+    bottom: 100px;
+    right: 300px;
+    animation: gravidade;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+ }
+
+ #estrela {
+    width: 200px;
+    position: fixed;
+    top: 50px;
+    left: 300px;
+    animation: highlight;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+ }
+
+ @keyframes gravidade{
+    0% {
+        transform: translateY(-70px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(-70px);
+    }
+
+ }
+
+ @keyframes space {
+    0% {
+        transform: scale(1.3);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+ }
+
+ @keyframes highlight {
+    0%{
+        filter:brightness(1);
+        transform: scale(1);
+    }
+    25%{
+        filter:brightness(1.5)
+
+    }
+    50%{
+        transform: scale(1.1)
+
+    }
+    100%{
+        filter:brightness(1);
+        transform: scale(1)
+    }
+ }
+@keyframes move {
+    0%{
+        top: -200px;
+        right: -200px;
+    }
+    100%{
+        top: 120vh;
+        right: 120vh;
+    }
+}
+ 

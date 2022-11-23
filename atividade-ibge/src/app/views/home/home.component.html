@@ -1,0 +1,45 @@
+<app-header></app-header>
+<h2>Pontos de venda cadastrados</h2>
+
+<ul>
+    <li>teste</li>
+    <li>teste</li>
+</ul>
+<br>
+<hr>
+<div class="container">
+    <h2>Cadastre um novo ponto de venda</h2><br>
+    <form [formGroup]="cadastrarPonto">
+    <mat-form-field appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input matInput placeholder="nom">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Estado</mat-label>
+        <input matInput placeholder="Estado">
+        <mat-icon matSuffix>home</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Cidade</mat-label>
+        <input matInput placeholder="Cidade">
+        <mat-icon matSuffix>home</mat-icon>
+    </mat-form-field><br>
+    <mat-form-field appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input matInput placeholder="Nome">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Começa as</mat-label>
+        <input matInput placeholder="Começa as:">
+        <mat-icon matSuffix>hour</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Termina as</mat-label>
+        <input matInput placeholder="Termina as:">
+        <mat-icon matSuffix>hour</mat-icon>
+    </mat-form-field><br>
+    <button mat-flat-button color="primary">Cadastrar</button>
+</form>
+</div>
